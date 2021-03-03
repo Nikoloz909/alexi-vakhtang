@@ -1,0 +1,553 @@
+section {
+    background-image: url('../images/body-bg-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    padding-bottom: 50px;
+
+    .banner-content {
+        display: flex;
+
+        .img-first {
+            max-width: 683px;
+            width: 100%;
+
+            .banner-img {
+                width: 100%;
+            }
+        }
+
+        .title-content {
+            margin-top: 91px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-left: 50px;
+
+            .titile-h2 {
+                font-family: 'FiraGO Bold';
+                font-size: 40px;
+                color: #040F16;
+                max-width: 730px;
+                width: 100%;
+                align-self: start;
+
+            }
+
+            .hr-line {
+                width: 100%;
+                height: 1px;
+                background-color: #040F16;
+            }
+        }
+    }
+
+    .bg-section {
+        margin-top: 60px;
+        background: #EFEFF6;
+
+        .content-wrapper {
+            @extend %container3;
+
+            .content-h3 {
+                font-family: 'FiraGO Bold';
+                font-size: 40px;
+                padding-top: 30px;
+            }
+
+            .paragraph-content {
+                margin-top: 23px;
+
+                .par-first {
+                    font-family: 'FiraGO Regular';
+                    color: #707070;
+                    margin-top: 40px;
+                }
+
+                .par-sec {
+                    font-family: 'FiraGO Regular';
+                    color: #707070;
+                    margin-top: 40px;
+                }
+
+                .par-third {
+                    font-family: 'FiraGO Regular';
+                    color: #707070;
+                    margin-top: 40px;
+                    line-height: 30px;
+                }
+
+                .par-for {
+                    font-family: 'FiraGO Regular';
+                    color: #707070;
+                    margin-top: 40px;
+                }
+            }
+
+            .first-btn {
+                max-width: 300px;
+                width: 100%;
+                margin-top: 43px;
+                font-family: 'FiraGO Bold';
+                border: transparent;
+                text-transform: uppercase;
+                transition: all .5s;
+                display: flex;
+
+                &:hover {
+                    padding-left: 30px;
+                    max-width: 500px;
+                    transition: all .5s;
+
+                }
+
+                .line-01 {
+                    width: 61px;
+                    height: 1px;
+                    background-color: black;
+                    display: flex;
+                    align-self: flex-end;
+                    position: relative;
+
+                    .fa-caret-right {
+                        position: absolute;
+                        top: -8px;
+                        left: 60px;
+                        // font-size: 13px;
+                    }
+                }
+
+            }
+        }
+
+        .line-02 {
+            width: 27%;
+            height: 1px;
+            background-color: black;
+        }
+
+    }
+
+    // end of bg section
+    .image-section {
+        margin-top: 60px;
+        background: #EFEFF6;
+
+        .images-wrapper {
+            @extend %container3;
+
+            .images-titile {
+                font-family: 'FiraGO Bold';
+                font-size: 40px;
+                padding: 30px 0;
+            }
+
+            .img-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                .first-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .first-img {
+                        width: 100%;
+                    }
+                }
+
+                .sec-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .sec-img {
+                        width: 100%;
+                    }
+                }
+
+                .third-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .third-img {
+                        width: 100%;
+                    }
+                }
+
+                .for-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .for-img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .img-wrapper-01 {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 18px;
+
+                .first-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .image-first {
+                        width: 100%;
+                    }
+                }
+
+                .sec-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .sec-img {
+                        width: 100%;
+                    }
+                }
+
+                .third-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .third-img {
+                        width: 100%;
+                    }
+                }
+
+                .for-box {
+                    max-width: 248px;
+                    width: 100%;
+
+                    .for-img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .btn-sec {
+                max-width: 300px;
+                width: 100%;
+                margin-top: 43px;
+                font-family: 'FiraGO Bold';
+                border: transparent;
+                transition: all .5s;
+                display: flex;
+
+                &:hover {
+                    padding-left: 30px;
+                    max-width: 500px;
+                    transition: all .5s;
+
+                }
+
+                .line-02 {
+                    width: 61px;
+                    height: 1px;
+                    background-color: black;
+                    display: flex;
+                    align-self: flex-end;
+                    position: relative;
+
+                    .fa-caret-right {
+                        position: absolute;
+                        top: -8px;
+                        left: 60px;
+                        // font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .line-03 {
+            width: 27%;
+            height: 1px;
+            background-color: black;
+        }
+    }
+
+    // iamges-section end 
+    .press-section {
+        margin-top: 60px;
+        background: #EFEFF6;
+
+        .press-wrapper {
+            @extend %container3;
+            padding-top: 15px;
+
+            .press {
+                font-size: 40px;
+                font-family: 'FiraGO Bold';
+            }
+
+            .paragraph {
+                .press-01 {
+                    font-family: 'FiraGO Regular';
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+
+                .press-02 {
+                    font-family: 'FiraGO Regular';
+                    font-size: 14px;
+                    margin-top: 20px;
+                    line-height: 30px;
+                }
+
+                .press-03 {
+                    font-family: 'FiraGO Regular';
+                    font-size: 14px;
+                    margin-top: 20px;
+                    line-height: 30px;
+
+                }
+
+                .press-04 {
+                    font-family: 'FiraGO Regular';
+                    font-size: 14px;
+                    margin-top: 20px;
+                    line-height: 30px;
+                }
+
+                .press-05 {
+                    font-family: 'FiraGO Regular';
+                    font-size: 14px;
+                    margin-top: 20px;
+                    line-height: 30px;
+                }
+
+                .press-06,
+                .press-07 {
+                    font-family: 'FiraGO Regular';
+                    font-size: 14px;
+                    margin-top: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .btn-third {
+                max-width: 300px;
+                width: 100%;
+                margin-top: 43px;
+                font-family: 'FiraGO Bold';
+                border: transparent;
+                transition: all .5s;
+                display: flex;
+
+                &:hover {
+                    padding-left: 30px;
+                    max-width: 500px;
+                    transition: all .5s;
+
+                }
+
+                .line-02 {
+                    width: 61px;
+                    height: 1px;
+                    background-color: black;
+                    display: flex;
+                    align-self: flex-end;
+                    position: relative;
+
+                    .fa-caret-right {
+                        position: absolute;
+                        top: -8px;
+                        left: 60px;
+                        // font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .line-03 {
+            width: 27%;
+            height: 1px;
+            background-color: black;
+        }
+    }
+
+    // end of press-section
+    .manuscript-section {
+        margin-top: 60px;
+        background: #EFEFF6;
+
+        .box-wrapper {
+            @extend %container3;
+
+            .h3-title {
+                font-family: 'FiraGO Bold';
+                font-size: 40px;
+                padding-top: 25px;
+            }
+
+            .title-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                .left-box {
+                    max-width: 500px;
+                    width: 100%;
+                    margin-top: 32px;
+
+                    .left-img {
+                        width: 100%;
+                    }
+
+                    .title-p {
+                        font-family: 'FiraGO Bold';
+                        font-style: italic;
+                        font-size: 24px;
+                        margin: 10px 0;
+                    }
+
+                    .title-p-01 {
+                        font-family: 'FiraGO Thin';
+                        font-style: italic;
+                        font-size: 24px;
+                    }
+                }
+
+            }
+
+            .right-box {
+                max-width: 500px;
+                width: 100%;
+                margin-top: 32px;
+
+                .right-img {
+                    width: 100%;
+                }
+
+                .title-p {
+                    font-family: 'FiraGO Bold';
+                    font-style: italic;
+                    font-size: 24px;
+                    margin: 10px 0;
+                }
+
+                .title-p-01 {
+                    font-family: 'FiraGO Thin';
+                    font-style: italic;
+                    font-size: 24px;
+                }
+            }
+
+            .btn-four {
+                max-width: 300px;
+                width: 100%;
+                margin-top: 43px;
+                font-family: 'FiraGO Bold';
+                border: transparent;
+                transition: all .5s;
+                display: flex;
+
+                &:hover {
+                    padding-left: 30px;
+                    max-width: 500px;
+                    transition: all .5s;
+
+                }
+
+                .line-02 {
+                    width: 61px;
+                    height: 1px;
+                    background-color: black;
+                    display: flex;
+                    align-self: flex-end;
+                    position: relative;
+
+                    .fa-caret-right {
+                        position: absolute;
+                        top: -8px;
+                        left: 60px;
+                        // font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .line-04 {
+            width: 27%;
+            height: 1px;
+            background-color: black;
+        }
+
+    }
+
+    // end of manuscript-section
+    .audio-video {
+        margin-top: 60px;
+        background: #EFEFF6;
+
+        .audio-wrapper {
+            @extend %container3;
+
+            .audio-h3 {
+                font-family: 'FiraGO Bold';
+                font-size: 40px;
+                padding: 20px 0;
+            }
+
+            .video-wrapper {
+
+                .firs-p,
+                .sec-p,
+                .sec-01,
+                .sec-02,
+                .sec-03,
+                .sec-04 {
+                    font-family: 'FiraGO Regular';
+                    font-size: 14px;
+                    color: #707070;
+                    line-height: 30px;
+
+                }
+
+            }
+
+            .btn-five {
+                max-width: 300px;
+                width: 100%;
+                margin-top: 43px;
+                font-family: 'FiraGO Bold';
+                border: transparent;
+                transition: all .5s;
+                display: flex;
+
+                &:hover {
+                    padding-left: 30px;
+                    max-width: 500px;
+                    transition: all .5s;
+
+                }
+
+                .line-02 {
+                    width: 61px;
+                    height: 1px;
+                    background-color: black;
+                    display: flex;
+                    align-self: flex-end;
+                    position: relative;
+
+                    .fa-caret-right {
+                        position: absolute;
+                        top: -8px;
+                        left: 60px;
+                        // font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .line-04 {
+            width: 27%;
+            height: 1px;
+            background-color: black;
+        }
+    }
+
+    // end of vaxtang page
+}

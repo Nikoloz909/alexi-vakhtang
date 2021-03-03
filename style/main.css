@@ -1,0 +1,1330 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+button, textarea, input:focus {
+  outline: 0;
+  border: 0;
+  resize: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+button {
+  text-transform: uppercase; }
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url("../fonts/Poppins-Bold.eot");
+  src: url("../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype"), url("../fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Black';
+  src: url("../fonts/Poppins-Black.eot");
+  src: url("../fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins-Black.woff") format("woff"), url("../fonts/Poppins-Black.ttf") format("truetype"), url("../fonts/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url("../fonts/Poppins-Medium.eot");
+  src: url("../fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium.ttf") format("truetype"), url("../fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url("../fonts/Poppins-SemiBold.eot");
+  src: url("../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Bold';
+  src: url("../fonts/FiraGO-Bold.eot");
+  src: url("../fonts/FiraGO-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Bold.woff2") format("woff2"), url("../fonts/FiraGO-Bold.woff") format("woff"), url("../fonts/FiraGO-Bold.ttf") format("truetype"), url("../fonts/FiraGO-Bold.svg#FiraGO-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO ExtraBold';
+  src: url("../fonts/FiraGO-ExtraBold.eot");
+  src: url("../fonts/FiraGO-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-ExtraBold.woff2") format("woff2"), url("../fonts/FiraGO-ExtraBold.woff") format("woff"), url("../fonts/FiraGO-ExtraBold.ttf") format("truetype"), url("../fonts/FiraGO-ExtraBold.svg#FiraGO-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Heavy';
+  src: url("../fonts/FiraGO-Heavy.eot");
+  src: url("../fonts/FiraGO-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Heavy.woff2") format("woff2"), url("../fonts/FiraGO-Heavy.woff") format("woff"), url("../fonts/FiraGO-Heavy.ttf") format("truetype"), url("../fonts/FiraGO-Heavy.svg#FiraGO-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Medium';
+  src: url("../fonts/FiraGO-Medium.eot");
+  src: url("../fonts/FiraGO-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Medium.woff2") format("woff2"), url("../fonts/FiraGO-Medium.woff") format("woff"), url("../fonts/FiraGO-Medium.ttf") format("truetype"), url("../fonts/FiraGO-Medium.svg#FiraGO-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Regular';
+  src: url("../fonts/FiraGO-Regular.eot");
+  src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Regular.woff2") format("woff2"), url("../fonts/FiraGO-Regular.woff") format("woff"), url("../fonts/FiraGO-Regular.ttf") format("truetype"), url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO SemiBold';
+  src: url("../fonts/FiraGO-SemiBold.eot");
+  src: url("../fonts/FiraGO-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../fonts/FiraGO-SemiBold.woff") format("woff"), url("../fonts/FiraGO-SemiBold.ttf") format("truetype"), url("../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'FiraGO Thin';
+  src: url("../fonts/FiraGO-Thin.eot");
+  src: url("../fonts/FiraGO-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraGO-Thin.woff2") format("woff2"), url("../fonts/FiraGO-Thin.woff") format("woff"), url("../fonts/FiraGO-Thin.ttf") format("truetype"), url("../fonts/FiraGO-Thin.svg#FiraGO-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+.box-container, .footer-main .footer-wrapper, section .bg-section .content-wrapper, section .image-section .images-wrapper, section .press-section .press-wrapper, section .manuscript-section .box-wrapper, section .audio-video .audio-wrapper, section .section-01 .sec-01-content, section .photos-section .photos-wrapper, section .section-02 .titile-wrapper, section .manu-section .title, section .manu-section .manu-wrapper, section .audio-section .audio-wrapper {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto; }
+
+.header-mn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background-color: rgba(255, 255, 255, 0.815);
+  backdrop-filter: blur(5px); }
+
+.header-navbar {
+  margin-top: 15px; }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.logo-img {
+  max-width: 116px;
+  width: 100%; }
+
+.header-menu {
+  padding: 10px 5px 0 5px; }
+
+.header-main-logo {
+  border-top: 3px solid #040F16;
+  padding: 28px 0 0; }
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.navbar-li {
+  margin-right: 15px;
+  padding-bottom: 37px;
+  position: relative; }
+  .navbar-li:hover .navbar-menu-dropdown,
+  .navbar-li:hover .navbar-menu-dropdown-first,
+  .navbar-li:hover .navbar-menu-dropdown-third, .navbar-li:active .navbar-menu-dropdown,
+  .navbar-li:active .navbar-menu-dropdown-first,
+  .navbar-li:active .navbar-menu-dropdown-third {
+    display: block; }
+
+.navbar-txt:link, .navbar-txt:visited {
+  font-size: 18px;
+  color: #040F16;
+  padding: 8px 0;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'FiraGO Bold';
+  transition: all 1s; }
+
+.navbar-txt:hover, .navbar-txt:active {
+  border-top: 3px solid #040F16;
+  color: #040F16;
+  transition: all 0.5s;
+  letter-spacing: 0px; }
+
+.header-switch-btn {
+  margin-bottom: 5px; }
+  .header-switch-btn .english-btn {
+    font-size: 14px;
+    color: #707070;
+    font-family: 'Poppins Bold'; }
+  .header-switch-btn .geo-btn {
+    font-size: 14px;
+    color: #040F16;
+    font-family: 'Poppins Bold'; }
+
+.navbar-menu-dropdown {
+  background-color: #FBFBFF;
+  width: 248px;
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  list-style: inside; }
+
+.navbar-li-dropdown {
+  margin: 15px 0 15px 20px; }
+
+.navbar-txt-dropdown:link, .navbar-txt-dropdown:visited {
+  font-size: 16px;
+  color: #707070;
+  padding: 8px 0;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+  letter-spacing: 1px;
+  font-family: 'Poppins Medium'; }
+
+.navbar-txt-dropdown:hover, .navbar-txt-dropdown:active {
+  color: #040F16; }
+
+.footer-main {
+  background-color: #040F16; }
+  .footer-main .footer-wrapper {
+    display: flex;
+    justify-content: space-around; }
+    .footer-main .footer-wrapper .first-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 25px;
+      max-width: 250px;
+      width: 100%;
+      height: 204px;
+      border-right: 1px solid  #1E272E; }
+      .footer-main .footer-wrapper .first-box:hover {
+        background-color: #1E272E; }
+      .footer-main .footer-wrapper .first-box .a-mail {
+        font-family: 'Poppins Medium';
+        font-size: 14px;
+        color: #FBFBFF;
+        margin-top: 40px;
+        transition: auto; }
+        .footer-main .footer-wrapper .first-box .a-mail:hover {
+          color: #707070; }
+    .footer-main .footer-wrapper .sec-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 25px;
+      max-width: 250px;
+      width: 100%;
+      height: 204px;
+      border-right: 1px solid  #1E272E; }
+      .footer-main .footer-wrapper .sec-box:hover {
+        background-color: #1E272E; }
+      .footer-main .footer-wrapper .sec-box .a-sec {
+        font-family: 'Poppins Medium';
+        font-size: 14px;
+        color: #FBFBFF;
+        margin-top: 40px;
+        transition: auto; }
+        .footer-main .footer-wrapper .sec-box .a-sec:hover {
+          color: #707070; }
+    .footer-main .footer-wrapper .third-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 25px;
+      max-width: 250px;
+      width: 100%;
+      height: 204px;
+      border-right: 1px solid  #1E272E; }
+      .footer-main .footer-wrapper .third-box:hover {
+        background-color: #1E272E; }
+      .footer-main .footer-wrapper .third-box .third-p {
+        font-family: 'FiraGO Medium';
+        font-size: 16px;
+        color: #FBFBFF;
+        margin-top: 40px;
+        transition: auto; }
+        .footer-main .footer-wrapper .third-box .third-p:hover {
+          color: #707070; }
+    .footer-main .footer-wrapper .for-box {
+      padding-top: 25px;
+      max-width: 250px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: auto; }
+      .footer-main .footer-wrapper .for-box:hover {
+        background-color: #1E272E; }
+      .footer-main .footer-wrapper .for-box .for-im-div .for-img-01 {
+        max-width: 45px;
+        width: 100%;
+        margin-right: 27px; }
+      .footer-main .footer-wrapper .for-box .for-im-div .for-img {
+        max-width: 45px;
+        width: 100%; }
+      .footer-main .footer-wrapper .for-box .for-p {
+        font-family: 'FiraGO Medium';
+        font-size: 16px;
+        color: #FBFBFF;
+        margin-top: 40px;
+        transition: auto;
+        cursor: default; }
+        .footer-main .footer-wrapper .for-box .for-p:hover {
+          color: #707070; }
+
+body {
+  margin: 80px 0 0;
+  width: 100%; }
+
+section {
+  background-image: url("../images/body-bg-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 50px; }
+
+.background-images-section {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+.bg-images-left,
+.bg-images-right {
+  display: block;
+  width: 100%;
+  height: 552px;
+  margin: 0;
+  padding: 0; }
+
+.vakhtang-img,
+.alex-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); }
+
+.main-section-heading {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  max-width: 670px;
+  width: 100%;
+  text-align: center; }
+
+.main-heading-txt {
+  font-size: 40px;
+  color: #FBFBFF;
+  line-height: initial;
+  padding: 5px;
+  font-family: 'FiraGO Regular'; }
+
+.heading-txt-border {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: -100%;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px solid #FBFBFF; }
+
+.first-article-box {
+  background-color: #EFEFF6;
+  padding: 10px;
+  position: relative; }
+
+.first-article-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #040F16;
+  position: absolute;
+  width: 490px;
+  left: 0;
+  top: 83%; }
+
+.first-article-line-two {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #040F16;
+  position: absolute;
+  width: 60px;
+  left: 101px;
+  top: 5px; }
+
+.fa-caret-right {
+  position: absolute;
+  top: 5px;
+  left: 161px; }
+
+.first-article-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.article-headline {
+  margin: 33px 0 0; }
+
+.article-headline-txt {
+  font-size: 24px;
+  font-family: 'FiraGO Bold'; }
+
+.article-main-para {
+  height: 173px;
+  margin-top: 35px; }
+
+.article-main-txt {
+  font-size: 14px;
+  font-family: 'FiraGO Regular';
+  letter-spacing: 0.5px; }
+
+.article-btn {
+  margin: 40px 0 45px 0;
+  position: relative; }
+
+.article-main-btn {
+  font-family: 'FiraGO Bold';
+  font-size: 18px;
+  transition: all .5s; }
+  .article-main-btn:hover {
+    padding-left: 30px;
+    max-width: 400px;
+    transition: all .5s; }
+    .article-main-btn:hover .first-article-line-two {
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-top: 1px solid #040F16;
+      position: absolute;
+      width: 60px;
+      left: 131px;
+      top: 5px; }
+    .article-main-btn:hover .fa-caret-right {
+      position: absolute;
+      top: 5px;
+      left: 191px; }
+
+.first-article-nav {
+  margin: 50px auto 63px auto;
+  max-width: 1010px;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent; }
+
+.first-article-navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.first-article-navbar-li {
+  text-decoration: underline; }
+
+.first-article-navbar-txt {
+  font-family: 'FiraGO Regular';
+  font-size: 40px; }
+
+.icon-arrow {
+  width: 100px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+  position: relative;
+  top: 50px; }
+  .icon-arrow::after {
+    content: "";
+    display: inline-block;
+    border-radius: 4px;
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -6px;
+    bottom: 13px; }
+  .icon-arrow::before {
+    content: "";
+    display: inline-block;
+    border-radius: 4px;
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -6px;
+    bottom: -13px; }
+
+.box-container, .footer-main .footer-wrapper, section .bg-section .content-wrapper, section .image-section .images-wrapper, section .press-section .press-wrapper, section .manuscript-section .box-wrapper, section .audio-video .audio-wrapper, section .section-01 .sec-01-content, section .photos-section .photos-wrapper, section .section-02 .titile-wrapper, section .manu-section .title, section .manu-section .manu-wrapper, section .audio-section .audio-wrapper {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto; }
+
+@media (max-width: 700.98px) {
+  .header-content {
+    display: none; }
+  .background-images-section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  .bg-images-left,
+  .bg-images-right {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+  .main-section-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 670px;
+    width: 100%; }
+  .main-heading-txt {
+    font-size: 30px; }
+  .heading-txt-border {
+    display: none; }
+  .first-article-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 991.98px) {
+  .header-content {
+    display: none; }
+  .background-images-section {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  .bg-images-left,
+  .bg-images-right {
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+  .main-section-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 670px;
+    width: 100%; }
+  .main-heading-txt {
+    font-size: 30px; }
+  .heading-txt-border {
+    margin-top: 1.5rem; } }
+
+@media (max-width: 575.98px) {
+  .main-heading-txt {
+    font-size: 24px; } }
+
+section {
+  background-image: url("../images/body-bg-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 50px; }
+  section .banner-content {
+    display: flex; }
+    section .banner-content .img-first {
+      max-width: 683px;
+      width: 100%; }
+      section .banner-content .img-first .banner-img {
+        width: 100%; }
+    section .banner-content .title-content {
+      margin-top: 91px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-left: 50px; }
+      section .banner-content .title-content .titile-h2 {
+        font-family: 'FiraGO Bold';
+        font-size: 40px;
+        color: #040F16;
+        max-width: 730px;
+        width: 100%;
+        align-self: start; }
+      section .banner-content .title-content .hr-line {
+        width: 100%;
+        height: 1px;
+        background-color: #040F16; }
+  section .bg-section {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .bg-section .content-wrapper .content-h3 {
+      font-family: 'FiraGO Bold';
+      font-size: 40px;
+      padding-top: 30px; }
+    section .bg-section .content-wrapper .paragraph-content {
+      margin-top: 23px; }
+      section .bg-section .content-wrapper .paragraph-content .par-first {
+        font-family: 'FiraGO Regular';
+        color: #707070;
+        margin-top: 40px; }
+      section .bg-section .content-wrapper .paragraph-content .par-sec {
+        font-family: 'FiraGO Regular';
+        color: #707070;
+        margin-top: 40px; }
+      section .bg-section .content-wrapper .paragraph-content .par-third {
+        font-family: 'FiraGO Regular';
+        color: #707070;
+        margin-top: 40px;
+        line-height: 30px; }
+      section .bg-section .content-wrapper .paragraph-content .par-for {
+        font-family: 'FiraGO Regular';
+        color: #707070;
+        margin-top: 40px; }
+    section .bg-section .content-wrapper .first-btn {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 43px;
+      font-family: 'FiraGO Bold';
+      border: transparent;
+      text-transform: uppercase;
+      transition: all .5s;
+      display: flex; }
+      section .bg-section .content-wrapper .first-btn:hover {
+        padding-left: 30px;
+        max-width: 500px;
+        transition: all .5s; }
+      section .bg-section .content-wrapper .first-btn .line-01 {
+        width: 61px;
+        height: 1px;
+        background-color: black;
+        display: flex;
+        align-self: flex-end;
+        position: relative; }
+        section .bg-section .content-wrapper .first-btn .line-01 .fa-caret-right {
+          position: absolute;
+          top: -8px;
+          left: 60px; }
+    section .bg-section .line-02 {
+      width: 27%;
+      height: 1px;
+      background-color: black; }
+  section .image-section {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .image-section .images-wrapper .images-titile {
+      font-family: 'FiraGO Bold';
+      font-size: 40px;
+      padding: 30px 0; }
+    section .image-section .images-wrapper .img-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      section .image-section .images-wrapper .img-wrapper .first-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper .first-box .first-img {
+          width: 100%; }
+      section .image-section .images-wrapper .img-wrapper .sec-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper .sec-box .sec-img {
+          width: 100%; }
+      section .image-section .images-wrapper .img-wrapper .third-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper .third-box .third-img {
+          width: 100%; }
+      section .image-section .images-wrapper .img-wrapper .for-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper .for-box .for-img {
+          width: 100%; }
+    section .image-section .images-wrapper .img-wrapper-01 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 18px; }
+      section .image-section .images-wrapper .img-wrapper-01 .first-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper-01 .first-box .image-first {
+          width: 100%; }
+      section .image-section .images-wrapper .img-wrapper-01 .sec-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper-01 .sec-box .sec-img {
+          width: 100%; }
+      section .image-section .images-wrapper .img-wrapper-01 .third-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper-01 .third-box .third-img {
+          width: 100%; }
+      section .image-section .images-wrapper .img-wrapper-01 .for-box {
+        max-width: 248px;
+        width: 100%; }
+        section .image-section .images-wrapper .img-wrapper-01 .for-box .for-img {
+          width: 100%; }
+    section .image-section .images-wrapper .btn-sec {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 43px;
+      font-family: 'FiraGO Bold';
+      border: transparent;
+      transition: all .5s;
+      display: flex; }
+      section .image-section .images-wrapper .btn-sec:hover {
+        padding-left: 30px;
+        max-width: 500px;
+        transition: all .5s; }
+      section .image-section .images-wrapper .btn-sec .line-02 {
+        width: 61px;
+        height: 1px;
+        background-color: black;
+        display: flex;
+        align-self: flex-end;
+        position: relative; }
+        section .image-section .images-wrapper .btn-sec .line-02 .fa-caret-right {
+          position: absolute;
+          top: -8px;
+          left: 60px; }
+    section .image-section .line-03 {
+      width: 27%;
+      height: 1px;
+      background-color: black; }
+  section .press-section {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .press-section .press-wrapper {
+      padding-top: 15px; }
+      section .press-section .press-wrapper .press {
+        font-size: 40px;
+        font-family: 'FiraGO Bold'; }
+      section .press-section .press-wrapper .paragraph .press-01 {
+        font-family: 'FiraGO Regular';
+        font-size: 14px;
+        margin-top: 20px; }
+      section .press-section .press-wrapper .paragraph .press-02 {
+        font-family: 'FiraGO Regular';
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 30px; }
+      section .press-section .press-wrapper .paragraph .press-03 {
+        font-family: 'FiraGO Regular';
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 30px; }
+      section .press-section .press-wrapper .paragraph .press-04 {
+        font-family: 'FiraGO Regular';
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 30px; }
+      section .press-section .press-wrapper .paragraph .press-05 {
+        font-family: 'FiraGO Regular';
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 30px; }
+      section .press-section .press-wrapper .paragraph .press-06,
+      section .press-section .press-wrapper .paragraph .press-07 {
+        font-family: 'FiraGO Regular';
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 30px; }
+      section .press-section .press-wrapper .btn-third {
+        max-width: 300px;
+        width: 100%;
+        margin-top: 43px;
+        font-family: 'FiraGO Bold';
+        border: transparent;
+        transition: all .5s;
+        display: flex; }
+        section .press-section .press-wrapper .btn-third:hover {
+          padding-left: 30px;
+          max-width: 500px;
+          transition: all .5s; }
+        section .press-section .press-wrapper .btn-third .line-02 {
+          width: 61px;
+          height: 1px;
+          background-color: black;
+          display: flex;
+          align-self: flex-end;
+          position: relative; }
+          section .press-section .press-wrapper .btn-third .line-02 .fa-caret-right {
+            position: absolute;
+            top: -8px;
+            left: 60px; }
+    section .press-section .line-03 {
+      width: 27%;
+      height: 1px;
+      background-color: black; }
+  section .manuscript-section {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .manuscript-section .box-wrapper .h3-title {
+      font-family: 'FiraGO Bold';
+      font-size: 40px;
+      padding-top: 25px; }
+    section .manuscript-section .box-wrapper .title-wrapper {
+      display: flex;
+      justify-content: space-between; }
+      section .manuscript-section .box-wrapper .title-wrapper .left-box {
+        max-width: 500px;
+        width: 100%;
+        margin-top: 32px; }
+        section .manuscript-section .box-wrapper .title-wrapper .left-box .left-img {
+          width: 100%; }
+        section .manuscript-section .box-wrapper .title-wrapper .left-box .title-p {
+          font-family: 'FiraGO Bold';
+          font-style: italic;
+          font-size: 24px;
+          margin: 10px 0; }
+        section .manuscript-section .box-wrapper .title-wrapper .left-box .title-p-01 {
+          font-family: 'FiraGO Thin';
+          font-style: italic;
+          font-size: 24px; }
+    section .manuscript-section .box-wrapper .right-box {
+      max-width: 500px;
+      width: 100%;
+      margin-top: 32px; }
+      section .manuscript-section .box-wrapper .right-box .right-img {
+        width: 100%; }
+      section .manuscript-section .box-wrapper .right-box .title-p {
+        font-family: 'FiraGO Bold';
+        font-style: italic;
+        font-size: 24px;
+        margin: 10px 0; }
+      section .manuscript-section .box-wrapper .right-box .title-p-01 {
+        font-family: 'FiraGO Thin';
+        font-style: italic;
+        font-size: 24px; }
+    section .manuscript-section .box-wrapper .btn-four {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 43px;
+      font-family: 'FiraGO Bold';
+      border: transparent;
+      transition: all .5s;
+      display: flex; }
+      section .manuscript-section .box-wrapper .btn-four:hover {
+        padding-left: 30px;
+        max-width: 500px;
+        transition: all .5s; }
+      section .manuscript-section .box-wrapper .btn-four .line-02 {
+        width: 61px;
+        height: 1px;
+        background-color: black;
+        display: flex;
+        align-self: flex-end;
+        position: relative; }
+        section .manuscript-section .box-wrapper .btn-four .line-02 .fa-caret-right {
+          position: absolute;
+          top: -8px;
+          left: 60px; }
+    section .manuscript-section .line-04 {
+      width: 27%;
+      height: 1px;
+      background-color: black; }
+  section .audio-video {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .audio-video .audio-wrapper .audio-h3 {
+      font-family: 'FiraGO Bold';
+      font-size: 40px;
+      padding: 20px 0; }
+    section .audio-video .audio-wrapper .video-wrapper .firs-p,
+    section .audio-video .audio-wrapper .video-wrapper .sec-p,
+    section .audio-video .audio-wrapper .video-wrapper .sec-01,
+    section .audio-video .audio-wrapper .video-wrapper .sec-02,
+    section .audio-video .audio-wrapper .video-wrapper .sec-03,
+    section .audio-video .audio-wrapper .video-wrapper .sec-04 {
+      font-family: 'FiraGO Regular';
+      font-size: 14px;
+      color: #707070;
+      line-height: 30px; }
+    section .audio-video .audio-wrapper .btn-five {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 43px;
+      font-family: 'FiraGO Bold';
+      border: transparent;
+      transition: all .5s;
+      display: flex; }
+      section .audio-video .audio-wrapper .btn-five:hover {
+        padding-left: 30px;
+        max-width: 500px;
+        transition: all .5s; }
+      section .audio-video .audio-wrapper .btn-five .line-02 {
+        width: 61px;
+        height: 1px;
+        background-color: black;
+        display: flex;
+        align-self: flex-end;
+        position: relative; }
+        section .audio-video .audio-wrapper .btn-five .line-02 .fa-caret-right {
+          position: absolute;
+          top: -8px;
+          left: 60px; }
+    section .audio-video .line-04 {
+      width: 27%;
+      height: 1px;
+      background-color: black; }
+
+section {
+  background-image: url("../images/body-bg-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 50px; }
+  section .banner-content {
+    display: flex; }
+    section .banner-content .left-img-block {
+      max-width: 683px;
+      width: 100%; }
+      section .banner-content .left-img-block .left-img {
+        width: 100%; }
+    section .banner-content .right-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 91px;
+      margin-left: 50px; }
+      section .banner-content .right-block .right-h3 {
+        font-family: 'Poppins Bold';
+        font-size: 40px;
+        max-width: 730px;
+        width: 100%; }
+      section .banner-content .right-block .rigth-hr {
+        width: 100%;
+        height: 1px;
+        background: black; }
+  section .section-01 {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .section-01 .sec-01-content .sec-h2 {
+      padding-top: 34px;
+      font-family: 'Poppins Bold';
+      font-size: 34px;
+      text-transform: uppercase; }
+    section .section-01 .sec-01-content .paragraph {
+      margin-top: 25px; }
+      section .section-01 .sec-01-content .paragraph .p-01 {
+        font-family: 'Poppins Regular';
+        font-size: 16px;
+        font-weight: lighter;
+        line-height: 25px; }
+      section .section-01 .sec-01-content .paragraph .p-02 {
+        margin-top: 40px;
+        font-family: 'Poppins Regular';
+        font-size: 16px;
+        font-weight: lighter;
+        line-height: 39px; }
+      section .section-01 .sec-01-content .paragraph .p-03 {
+        margin-top: 40px;
+        font-family: 'Poppins Regular';
+        font-size: 16px;
+        font-weight: lighter;
+        line-height: 20px; }
+    section .section-01 .sec-01-content .first-btn {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 43px;
+      font-family: 'FiraGO Bold';
+      border: transparent;
+      text-transform: uppercase;
+      transition: all .5s;
+      display: flex; }
+      section .section-01 .sec-01-content .first-btn:hover {
+        padding-left: 30px;
+        max-width: 500px;
+        transition: all .5s; }
+      section .section-01 .sec-01-content .first-btn .line-01 {
+        width: 61px;
+        height: 1px;
+        background-color: black;
+        display: flex;
+        align-self: flex-end;
+        position: relative; }
+        section .section-01 .sec-01-content .first-btn .line-01 .fa-caret-right {
+          position: absolute;
+          top: -8px;
+          left: 60px; }
+    section .section-01 .line-02 {
+      width: 26%;
+      height: 1px;
+      background-color: black; }
+  section .photos-section {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .photos-section .photos-wrapper {
+      padding-top: 25px; }
+      section .photos-section .photos-wrapper .photo-h2 {
+        font-family: 'Poppins Bold';
+        font-size: 34px;
+        text-transform: uppercase; }
+      section .photos-section .photos-wrapper .list-wrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; }
+        section .photos-section .photos-wrapper .list-wrapper .img-01 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper .img-01 .img-001 {
+            width: 100%; }
+        section .photos-section .photos-wrapper .list-wrapper .img-02 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper .img-02 .img-002 {
+            width: 100%; }
+        section .photos-section .photos-wrapper .list-wrapper .img-03 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper .img-03 .img-003 {
+            width: 100%; }
+        section .photos-section .photos-wrapper .list-wrapper .img-04 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper .img-04 .img-004 {
+            width: 100%; }
+      section .photos-section .photos-wrapper .list-wrapper-01 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; }
+        section .photos-section .photos-wrapper .list-wrapper-01 .img-01 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper-01 .img-01 .img-001 {
+            width: 100%; }
+        section .photos-section .photos-wrapper .list-wrapper-01 .img-02 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper-01 .img-02 .img-002 {
+            width: 100%; }
+        section .photos-section .photos-wrapper .list-wrapper-01 .img-03 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper-01 .img-03 .img-003 {
+            width: 100%; }
+        section .photos-section .photos-wrapper .list-wrapper-01 .img-04 {
+          max-width: 248px;
+          width: 100%; }
+          section .photos-section .photos-wrapper .list-wrapper-01 .img-04 .img-004 {
+            width: 100%; }
+      section .photos-section .photos-wrapper .first-btn {
+        max-width: 300px;
+        width: 100%;
+        margin-top: 43px;
+        font-family: 'FiraGO Bold';
+        border: transparent;
+        text-transform: uppercase;
+        transition: all .5s;
+        display: flex; }
+        section .photos-section .photos-wrapper .first-btn:hover {
+          padding-left: 30px;
+          max-width: 500px;
+          transition: all .5s; }
+        section .photos-section .photos-wrapper .first-btn .line-01 {
+          width: 61px;
+          height: 1px;
+          background-color: black;
+          display: flex;
+          align-self: flex-end;
+          position: relative; }
+          section .photos-section .photos-wrapper .first-btn .line-01 .fa-caret-right {
+            position: absolute;
+            top: -8px;
+            left: 60px; }
+  section .line-02 {
+    width: 26%;
+    height: 1px;
+    background-color: black; }
+  section .section-02 {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .section-02 .titile-wrapper {
+      padding-top: 25px; }
+      section .section-02 .titile-wrapper .pres-h2 {
+        font-family: 'Poppins Bold';
+        font-size: 34px;
+        text-transform: uppercase;
+        margin-bottom: 25px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-01 {
+        font-family: 'Poppins Regular';
+        font-weight: lighter;
+        line-height: 25px;
+        font-size: 16px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-001 {
+        text-indent: 40px;
+        margin-top: 20px;
+        font-family: 'Poppins Medium';
+        font-size: 16px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-02 {
+        font-family: 'Poppins Regular';
+        font-weight: lighter;
+        line-height: 25px;
+        font-size: 16px;
+        margin-top: 20px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-002 {
+        text-indent: 40px;
+        margin-top: 20px;
+        font-family: 'Poppins Medium';
+        font-size: 16px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-03 {
+        font-family: 'Poppins Regular';
+        font-weight: lighter;
+        line-height: 25px;
+        font-size: 16px;
+        margin-top: 20px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-003 {
+        text-indent: 40px;
+        margin-top: 20px;
+        font-family: 'Poppins Medium';
+        font-size: 16px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-04 {
+        font-family: 'Poppins Regular';
+        font-weight: lighter;
+        line-height: 25px;
+        font-size: 16px;
+        margin-top: 20px; }
+      section .section-02 .titile-wrapper .presse-wrapper .p-004 {
+        text-indent: 40px;
+        margin-top: 20px;
+        font-family: 'Poppins Medium';
+        font-size: 16px; }
+      section .section-02 .titile-wrapper .first-btn {
+        max-width: 300px;
+        width: 100%;
+        margin-top: 43px;
+        font-family: 'FiraGO Bold';
+        border: transparent;
+        text-transform: uppercase;
+        transition: all .5s;
+        display: flex; }
+        section .section-02 .titile-wrapper .first-btn:hover {
+          padding-left: 30px;
+          max-width: 500px;
+          transition: all .5s; }
+        section .section-02 .titile-wrapper .first-btn .line-01 {
+          width: 61px;
+          height: 1px;
+          background-color: black;
+          display: flex;
+          align-self: flex-end;
+          position: relative; }
+          section .section-02 .titile-wrapper .first-btn .line-01 .fa-caret-right {
+            position: absolute;
+            top: -8px;
+            left: 60px; }
+    section .section-02 .line-02 {
+      width: 26%;
+      height: 1px;
+      background-color: black; }
+  section .manu-section {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .manu-section .title {
+      padding-top: 25px; }
+      section .manu-section .title .titile-h3 {
+        font-family: 'Poppins Bold';
+        font-size: 34px;
+        font-weight: bold;
+        text-transform: uppercase; }
+    section .manu-section .manu-wrapper {
+      padding-top: 31px;
+      display: flex;
+      justify-content: space-between; }
+      section .manu-section .manu-wrapper .left-block {
+        max-width: 500px;
+        width: 100%; }
+        section .manu-section .manu-wrapper .left-block .first-img {
+          width: 100%; }
+        section .manu-section .manu-wrapper .left-block .name {
+          font-family: 'Poppins Bold';
+          font-style: italic;
+          font-size: 25px; }
+        section .manu-section .manu-wrapper .left-block .sec-p {
+          font-style: italic;
+          font-size: 18px;
+          font-family: 'Poppins Medium'; }
+        section .manu-section .manu-wrapper .left-block .first-btn {
+          max-width: 300px;
+          width: 100%;
+          margin-top: 43px;
+          font-family: 'FiraGO Bold';
+          border: transparent;
+          text-transform: uppercase;
+          transition: all .5s;
+          display: flex; }
+          section .manu-section .manu-wrapper .left-block .first-btn:hover {
+            padding-left: 30px;
+            max-width: 500px;
+            transition: all .5s; }
+          section .manu-section .manu-wrapper .left-block .first-btn .line-01 {
+            width: 61px;
+            height: 1px;
+            background-color: black;
+            display: flex;
+            align-self: flex-end;
+            position: relative; }
+            section .manu-section .manu-wrapper .left-block .first-btn .line-01 .fa-caret-right {
+              position: absolute;
+              top: -8px;
+              left: 60px; }
+      section .manu-section .manu-wrapper .rigth-block {
+        max-width: 500px;
+        width: 100%; }
+        section .manu-section .manu-wrapper .rigth-block .first-img {
+          width: 100%; }
+        section .manu-section .manu-wrapper .rigth-block .name {
+          font-family: 'Poppins Bold';
+          font-style: italic;
+          font-size: 25px; }
+        section .manu-section .manu-wrapper .rigth-block .sec-p {
+          font-style: italic;
+          font-size: 18px;
+          font-family: 'Poppins Medium'; }
+    section .manu-section .line-02 {
+      width: 26%;
+      height: 1px;
+      background-color: black; }
+  section .audio-section {
+    margin-top: 60px;
+    background: #EFEFF6; }
+    section .audio-section .audio-wrapper {
+      padding-top: 31px; }
+      section .audio-section .audio-wrapper .audio-h3 {
+        font-family: 'Poppins Bold';
+        font-size: 34px;
+        text-transform: uppercase; }
+      section .audio-section .audio-wrapper .video-box {
+        margin-top: 25px; }
+        section .audio-section .audio-wrapper .video-box .p-01,
+        section .audio-section .audio-wrapper .video-box .p-07,
+        section .audio-section .audio-wrapper .video-box .p-11 {
+          font-family: 'Poppins Regular';
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase; }
+        section .audio-section .audio-wrapper .video-box .p-02,
+        section .audio-section .audio-wrapper .video-box .p-03,
+        section .audio-section .audio-wrapper .video-box .p-04,
+        section .audio-section .audio-wrapper .video-box .p-05,
+        section .audio-section .audio-wrapper .video-box .p-06,
+        section .audio-section .audio-wrapper .video-box .p-12 {
+          font-family: 'Poppins Regular';
+          font-size: 16px;
+          margin: 10px 0;
+          line-height: 25px; }
+      section .audio-section .audio-wrapper .p-08,
+      section .audio-section .audio-wrapper .p-09,
+      section .audio-section .audio-wrapper .p-10 {
+        font-family: 'Poppins Regular';
+        font-size: 16px;
+        margin: 10px 0; }
+    section .audio-section .first-btn {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 43px;
+      font-family: 'FiraGO Bold';
+      border: transparent;
+      text-transform: uppercase;
+      transition: all .5s;
+      display: flex; }
+      section .audio-section .first-btn:hover {
+        padding-left: 30px;
+        max-width: 500px;
+        transition: all .5s; }
+      section .audio-section .first-btn .line-01 {
+        width: 61px;
+        height: 1px;
+        background-color: black;
+        display: flex;
+        align-self: flex-end;
+        position: relative; }
+        section .audio-section .first-btn .line-01 .fa-caret-right {
+          position: absolute;
+          top: -8px;
+          left: 60px; }
+    section .audio-section .line-02 {
+      width: 26%;
+      height: 1px;
+      background-color: black; }

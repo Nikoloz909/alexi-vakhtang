@@ -1,0 +1,110 @@
+// // Small devices (landscape phones, less than 768px)
+@media (max-width: 700.98px) { 
+    
+    .header-content {
+        display: none;
+    }
+
+    .background-images-section {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg-images-left,
+    .bg-images-right {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .main-section-heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 670px;
+        width: 100%;
+    }
+
+    .main-heading-txt {
+        font-size: $fontsize08;
+    }
+
+    .heading-txt-border {
+        display: none;
+    }
+
+
+//     // Articles section
+.first-article-box-content {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+}
+
+// .article-main-txt {
+//     overflow: hidden;
+//     white-space: nowrap;
+// }
+    
+// .article-headline-txt {
+//     font-size: $fontsize06;
+//     font-family: 'FiraGO Bold';
+// }
+    
+}
+    
+
+
+// // // Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .header-content {
+        display: none;
+    }
+
+    .background-images-section {
+        display: inline-flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg-images-left,
+    .bg-images-right {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .main-section-heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 670px;
+        width: 100%;
+    }
+
+    .main-heading-txt {
+        font-size: $fontsize08;
+    }
+
+    
+    .heading-txt-border{
+        margin-top: 1.5rem;
+    }
+}
+
+//  Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    
+    .main-heading-txt {
+        font-size: $fontsize05;
+    }
+}
+
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }

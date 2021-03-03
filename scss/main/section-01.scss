@@ -1,0 +1,172 @@
+
+
+.first-article-box {
+    background-color: $color03;
+    padding: 10px;
+    position: relative;
+}
+
+
+.first-article-line {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid $color01-blck;
+    position: absolute;
+    width: 490px;
+    left: 0;
+    top: 83%;
+}
+
+.first-article-line-two {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #040F16;
+    position: absolute;
+    width: 60px;
+    left: 101px;
+    top: 5px;
+}
+
+.fa-caret-right {
+    position: absolute;
+    top: 5px;
+    left: 161px;
+}
+
+
+.first-article-box-content {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+
+.article-headline {
+    margin: 33px 0 0;
+}
+
+.article-headline-txt {
+    font-size: $fontsize05;
+    font-family: 'FiraGO Bold';
+}
+
+.article-main-para {
+    height: 173px;
+    margin-top: 35px;
+}
+.article-main-txt {
+    font-size: $fontsize02;
+    font-family: 'FiraGO Regular';
+    letter-spacing: 0.5px;
+    
+}
+
+.article-btn {
+    margin: 40px 0 45px 0;
+    position: relative;
+}
+
+
+
+.article-main-btn {
+    font-family: 'FiraGO Bold';
+    font-size: $fontsize04;
+    transition: all .5s;
+    &:hover{
+        padding-left: 30px;
+        max-width: 400px;
+        transition: all .5s;
+        .first-article-line-two {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid #040F16;
+            position: absolute;
+            width: 60px;
+            left: 131px;
+            top: 5px;
+        }
+        
+        .fa-caret-right {
+            position: absolute;
+            top: 5px;
+            left: 191px;
+        }
+    }
+}  
+
+
+
+
+
+
+.first-article-nav {
+    margin: 50px auto 63px auto;
+    max-width: 1010px;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.first-article-navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.first-article-navbar-li {
+    text-decoration: underline;
+}
+
+.first-article-navbar-txt {
+    font-family: 'FiraGO Regular';
+    font-size: $fontsize07;
+}
+
+.icon-arrow {
+    width: 100px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: relative;
+    top: 50px;
+    &::after {
+        content: "";
+        display: inline-block;
+        border-radius: 4px;
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        transform: rotate(45deg);
+        position: absolute;
+        right: -6px;
+        bottom: 13px;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        border-radius: 4px;
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        transform: rotate(-45deg);
+        position: absolute;
+        right: -6px;
+        bottom: -13px;
+    }   
+}
+
+
+
+
+
+
+
+
